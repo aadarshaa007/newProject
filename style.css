@@ -70,6 +70,7 @@ body {
 }
 .intro p {
   line-height: 4vh;
+  font-family: "Roboto", sans-serif;
 }
 .intro img {
   height: 15vh;
@@ -99,6 +100,7 @@ body {
 .button2 {
   color: rgb(255, 255, 255);
   background: transparent;
+  transition: 0.3s;
 }
 .button2:hover {
   color: rgb(54, 141, 240);
@@ -111,21 +113,43 @@ body {
   padding: 5vh 0vw;
   width: 100%;
   height: 100vh;
-
-  background-color: rgb(165, 165, 224);
 }
-mid-nav {
-  text-decoration: none;
-  display: inline;
-}
-
 .projects {
   margin: 0vh 10vw;
-  width: auto;
+  width: 80vw;
   height: 100vh;
 }
 .projects h3 {
   font-size: 30px;
+  line-height: 1.4;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  padding: 1vh 0vw 3vh;
+}
+.mid-nav li a {
+  text-decoration: none;
+  font-weight: 710;
+  font-size: 0.7em;
+  color: black;
+  list-style: none;
+  text-transform: uppercase;
   line-height: 1.4;
 }
+.active,
+.mid-nav li a:hover {
+  color: #0575e6;
+  text-decoration: underline;
+}
+.mid-nav li {
+  list-style: none;
+  display: inline-flex;
+  margin-right: 3vw;
+}
+.mid-nav {
+  width: 80vw;
+  height: auto;
+  margin-bottom: 5vh;
+}
+/* mid nav end */
+
+/* project items view */
