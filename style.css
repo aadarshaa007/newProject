@@ -153,3 +153,54 @@ body {
 /* mid nav end */
 
 /* project items view */
+.projectList {
+  display: flex;
+  flex-basis: 50%;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  height: auto;
+}
+.project {
+  width: 49%;
+  height: 400px;
+  margin: 20px 0px;
+}
+
+.img {
+  background-image: linear-gradient(
+    rgb(57, 163, 75),
+    rgb(82, 170, 89),
+    rgb(116, 196, 127)
+  );
+  /* object-fit: contain; */
+
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  text-align: center;
+}
+.project img {
+  width: 90%;
+  height: auto;
+  transition: 0.4s;
+  margin-top: 30px;
+}
+/* .project img:hover {
+  transform: scale(1.1); 
+}*/
+.project div h3 {
+  font-size: 18px;
+  margin-top: 1vh;
+  line-height: 5px;
+}
+.project div h3:hover {
+  text-decoration: underline;
+  color: #1987e2;
+}
+.project div p {
+  font-size: 13px;
+  line-height: 3px;
+  color: rgb(71, 71, 71);
+  font-family: "Roboto", sans-serif;
+}

@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-<!-- header start -->
+    <!-- header start -->
     <div class="header">
       <div class="nav-bar">
         <h1 class="name">Aadarsha.</h1>
@@ -30,7 +33,7 @@
               <a href="#" target="_blank">CONTACT ME</a>
             </li>
             <li class="nav-item nav-item5">
-              <a href="#" target="_blank" ><u>ENG</u></a>
+              <a href="#" target="_blank"><u>ENG</u></a>
             </li>
             <li class="nav-item nav-item6">
               <a href="#" target="_blank">नेपा</a>
@@ -40,41 +43,102 @@
       </div>
       <div class="cover">
         <div class="intro">
-        <img src="user_img.jpg" alt="user's image" />
-        <h1>
-          I'm Aadarsha Tiwari. I design
-          mobile and web experiences.
-        </h1>
-        <p>
-          I am a UI\UX designer located in Hartford, Connecticut. I currently
-          work as a part
-          time Remote Junior Web Designer for Coolor, located in Las Vegas. I am
-          looking to
-          take on more work and to increase my skills as a UI\UX enthusiast.
-        </p>
-        <a href="#"><button class="button button1">CONTACT ME</button></a>
-        <a href="#"><button class="button button2">DOWNLOAD CV</button></a>
+          <img src="user_img.jpg" alt="user's image" />
+          <h1>I'm Aadarsha Tiwari. I design mobile and web experiences.</h1>
+          <p>
+            I am a UI\UX designer located in Hartford, Connecticut. I currently
+            work as a part time Remote Junior Web Designer for Coolor, located
+            in Las Vegas. I am looking to take on more work and to increase my
+            skills as a UI\UX enthusiast.
+          </p>
+          <a href="#"><button class="button button1">CONTACT ME</button></a>
+          <a href="#"><button class="button button2">DOWNLOAD CV</button></a>
+        </div>
       </div>
-    </div>
-<!-- header end -->
-<!-- main start -->
-    <div class="main">
-      <div class="projects">
-        <h3>Projects</h3>
-        <div>
-          <ul class="mid-nav">
+      <!-- header end -->
+      <!-- main start -->
+      <div class="main">
+        <div class="projects">
+          <h3>Projects</h3>
+          <div>
+            <ul class="mid-nav">
               <li><a href="#" class="active">All Projects</a></li>
               <li><a href="#">web apps design</a></li>
               <li><a href="#">mobile apps design</a></li>
               <li><a href="#">prototyping</a></li>
-          </ul>
+            </ul>
+          </div>
+          <div class="projectList">
+            <div
+              class="project project1"
+              onmouseover="hoverOn(0)"
+              onmouseleave="hoverOff(0)"
+            >
+              <div class="img">
+                <img id="img1" src="macbook.png" alt="" />
+              </div>
+              <div>
+                <h3>UI\UX design for Shoppers Android app</h3>
+                <p>Feb, 2022</p>
+              </div>
+            </div>
+            <div
+              class="project project2"
+              onmouseover="hoverOn(1)"
+              onmouseleave="hoverOff(1)"
+            >
+              <div class="img">
+                <img id="img2" src="macbook.png" alt="" />
+              </div>
+              <div>
+                <h3>UI\UX design for Shoppers Android app</h3>
+                <p>Feb, 2022</p>
+              </div>
+            </div>
+            <div
+              class="project project3"
+              onmouseover="hoverOn(2)"
+              onmouseleave="hoverOff(2)"
+            >
+              <div class="img">
+                <img id="img3" src="macbook.png" alt="" />
+              </div>
+              <div>
+                <h3>UI\UX design for Shoppers Android app</h3>
+                <p>Feb, 2022</p>
+              </div>
+            </div>
+            <div
+              class="project project4"
+              onmouseover="hoverOn(3)"
+              onmouseleave="hoverOff(3)"
+            >
+              <div class="img">
+                <img id="img4" src="macbook.png" alt="" />
+              </div>
+              <div>
+                <h3>UI\UX design for Shoppers Android app</h3>
+                <p>Feb, 2022</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-<!-- main end -->
+    <!-- main end -->
     <footer>
       <div class="contact"></div>
       <div class="form"></div>
     </footer>
+
+    <script>
+      const x = ["img1", "img2", "img3", "img4"];
+      function hoverOn(i) {
+        document.getElementById(x[i]).style.transform = "scale(1.1,1.1)";
+      }
+      function hoverOff(i) {
+        document.getElementById(x[i]).style.transform = "scale(1,1)";
+      }
+    </script>
   </body>
 </html>
