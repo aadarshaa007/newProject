@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="all.css">
+
+<!-- fontawsome -->
+    <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
+<!-- fontawsome -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -24,13 +29,13 @@
               <a href="#projects">MY PROJECTS</a>
             </li>
             <li class="nav-item nav-item2">
-              <a href="#" target="_blank">ABOUT ME</a>
+              <a id="mybtn1">ABOUT ME</a>
             </li>
             <li class="nav-item nav-item3">
               <a href="#" target="_blank">DOWNLOAD CV</a>
             </li>
             <li class="nav-item nav-item4">
-              <a href="#" target="_blank">CONTACT ME</a>
+              <a id="mybtn2">CONTACT ME</a>
             </li>
             <li class="nav-item nav-item5">
               <a href="#" target="_blank"><u>ENG</u></a>
@@ -140,6 +145,30 @@
               happen! Drop me a letter and start your project right now! Just do
               it. I will not spam you on e-mail or add to MailChimp list
             </p>
+            <div class="detail">
+              <p>
+                <span class="title">phone</span>
+                <span class="details">+977-98-4-68-58038</span>
+              </p>
+              <p>
+                <span class="title">email</span>
+                <span class="details">aadarshatiwari@gmail.com</span>
+              </p>
+              <p>
+                <span class="title">address</span>
+                <span class="details">kathmandu, Nepal</span>
+              </p>
+              <p>
+                <span class="title">social</span>
+                <span class="details">
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                  <a href=""><i class="fab fa-instagram"></i></a>
+                  <a href=""><i class="fab fa-google"></i></a>
+                  <a href=""><i class="fab fa-facebook-messenger"></i></a>
+                </span>
+              </p>
+            </div>  
           </div>
           <div class="cf form">
             <div class="name-email">
@@ -154,7 +183,7 @@
             </div>
             <div class="t-box">
               <label for="text-box">Message</label><br>
-              <textarea name="" id="" cols="60" rows="10" placeholder="Project description"></textarea>
+              <textarea cols="60" rows="10" placeholder="Project description"></textarea>
             </div>
             <button>send message</button>
             <div class="submit-button"></div>
@@ -167,6 +196,47 @@
       </div>
     </footer>
 
+    <!-- model box start About me -->
+    <div id="myModel1" class="model1">
+      <div class="model-content1" id="modelContent1">
+        <h1>About me</h1>
+        <p>Hello! My name is Richard Brown. I am a UI\UX designer located in Hartford, Connecticut. I currently work as a part time Remote Junior Web Designer for Coolor, located in Las Vegas. I am looking to take on more work and to increase my skills as a UI\UX enthusiast.</p>
+        <div class="detail">
+          <p>
+            <span class="title">phone</span>
+            <span class="details">+977-98-4-68-58038</span>
+          </p>
+          <p>
+            <span class="title">email</span>
+            <span class="details">aadarshatiwari@gmail.com</span>
+          </p>
+          <p>
+            <span class="title">address</span>
+            <span class="details">kathmandu, Nepal</span>
+          </p>
+          <p>
+            <span class="title">social</span>
+            <span class="details">
+              <!-- <a href=""><i class="fas fa-band-aid"></i></a>
+              <a href=""></a>
+              <a href=""></a>
+              <a href=""></a>
+              <a href=""></a> -->
+            </span>
+
+      </div>
+    </div>
+    <!-- model box end About me -->
+
+    <!-- model box contact me start -->
+    <div id="myModel2" class="model2">
+      <div class="model-content2" id="modelContent2">
+        <h1>Contact</h1>
+      <p>this is contact page...</p>
+      </div>
+    </div>
+    <!-- model box contact me end -->
+
     <script>
       const x = ["img1", "img2", "img3", "img4"];
       function hoverOn(i) {
@@ -175,6 +245,45 @@
       function hoverOff(i) {
         document.getElementById(x[i]).style.transform = "scale(1,1)";
       }
+
+      // model box about me
+
+      var model1 = document.getElementById("myModel1");
+      var btn1 = document.getElementById("mybtn1");
+      // var modelContent = document.getElementById("modelContent1");
+
+      btn1.onclick = function(){
+        model1.style.display = "block";
+      }
+      window.onclick = function(event){
+        if (event.target == model1){
+           model1.style.display = "none";
+        }
+     }
+     //end
+
+      // model box about me
+
+    //   var model2 = document.getElementById("myModel2");
+    //   var btn2 = document.getElementById("mybtn2");
+    //   var modelContent = document.getElementById("modelContent");
+
+    //   btn2.onclick = function(){
+    //     model2.style.display = "block";
+    //   }
+    //    modelContent.onclick = function(){
+    //      model.style.display = "none";
+    //    }
+    //   modelContent.onclick = function(click){
+    //     if (click.target == model2){
+    //        model2.style.display = "none";
+    //     }
+    //  }
+
+
+     //end
+     
+
     </script>
   </body>
 </html>

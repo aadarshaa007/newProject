@@ -5,6 +5,12 @@
   font-family: "Montserrat", sans-serif;
   /* color: #252525; */
 }
+*:after {
+  box-sizing: border-box;
+}
+*:before {
+  box-sizing: border-box;
+}
 body {
   width: 100vw;
   height: auto;
@@ -50,6 +56,7 @@ body {
   text-decoration: underline;
 }
 .nav-item {
+  cursor: pointer;
   display: inline-flex;
   margin: 0vh 2vh;
 }
@@ -224,7 +231,7 @@ footer {
   padding-bottom: 20px;
 }
 hr {
-  color: #acacac;
+  border-top: 0.5px solid #e7e7e7;
 }
 .contact-form .cf {
   width: 50%;
@@ -252,6 +259,32 @@ hr {
 
 .contact p {
   font-family: "Roboto", sans-serif;
+}
+.detail {
+  margin: 15px 0px;
+  font-family: "Roboto", sans-serif;
+}
+.detail p {
+  padding: 3px 0px;
+}
+.detail .title {
+  text-transform: uppercase;
+  width: 90px;
+  display: inline-block;
+  font-size: 11px;
+  color: rgb(36, 36, 36);
+}
+.detail .details {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+}
+.details a {
+  margin-right: 15px;
+  color: #2c2c2c;
+}
+.details a:hover {
+  color: #208bf0;
 }
 .contact p .span1 {
   margin: 0px 30px 0px 0px;
@@ -281,12 +314,18 @@ hr {
 .form label {
   font-size: 11px;
 }
-.name-email input,
-textarea {
+.name-email input {
+  width: 100%;
+  height: 45px;
+  padding: 10px 40px 10px 10px;
+  margin-bottom: 25px;
+}
+.cf textarea {
   width: 100%;
   padding: 10px 40px 10px 10px;
   margin-bottom: 25px;
 }
+
 .cf input,
 .cf textarea {
   margin-top: 20px;
@@ -295,6 +334,17 @@ textarea {
   font-weight: 100;
   resize: none;
   border: 1px solid rgb(209, 209, 209);
+}
+.cf input:hover,
+.cf textarea:hover {
+  border: 2px solid rgb(21, 145, 218);
+  box-shadow: 0px 8px 20px rgba(46, 142, 231, 0.26);
+}
+.cf input:focus,
+.cf textarea:focus {
+  outline: none;
+  border: 2px solid rgb(21, 145, 218);
+  box-shadow: 0px 8px 20px rgba(46, 142, 231, 0.26);
 }
 .name,
 .email {
@@ -308,3 +358,64 @@ textarea {
   padding: 25px;
   background-color: rgb(240, 240, 240);
 }
+
+/* model box css start */
+
+.model1,
+.model2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.model-content1,
+.model-content2 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 45%;
+}
+.model-content1 h1 {
+  color: rgb(26, 26, 26);
+  margin: 10px 0px;
+  font-size: 30px;
+}
+.model-content1 p {
+  color: rgb(114, 114, 114);
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+}
+
+/* model box css end */
+/* model box css start  contact*/
+
+/* .model2 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.model-content2 {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+} */
+
+/* model box css end  contact*/
